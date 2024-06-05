@@ -77,6 +77,37 @@
         });
     });
 
+    $('.pd-cart').on('click', function(e) {
+        e.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+
+        // Lấy số lượng và ID của sản phẩm từ các phần tử tương ứng
+        var quantity = parseInt($(this).siblings('.quantity').find('input').val());
+        var productId = $(this).closest('.product-details').find('.primary-btn.pd-cart').data('product-id'); // Sửa đổi cách lấy productId
+
+        // Kiểm tra xem productId có tồn tại hay không
+        if(productId !== undefined) {
+            // Gửi yêu cầu AJAX để thêm sản phẩm vào giỏ hàng
+            $.ajax({
+                type: 'GET',
+                url: '/cart/add/' + productId + '?quantity=' + quantity, // Đường dẫn đến route xử lý thêm sản phẩm vào giỏ hàng, bao gồm cả số lượng
+                success: function(response) {
+                    // Xử lý kết quả sau khi thêm sản phẩm vào giỏ hàng
+                    console.log('Product added to cart:', response);
+                    // Hiển thị thông báo hoặc cập nhật giỏ hàng trên giao diện người dùng
+                    location.reload(); // Tạm thời refresh trang, bạn có thể thay thế bằng cách cập nhật giỏ hàng mà không cần load lại trang
+                },
+                error: function(xhr, status, error) {
+                    // Xử lý lỗi nếu có
+                    console.error('Error adding product to cart:', error);
+                }
+            });
+        } else {
+            console.error('Product ID is undefined'); // Log lỗi nếu không thể lấy được productId
+        }
+    });
+
+
+
 
     $('.close-td i').on('click', function(e) {
         e.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>

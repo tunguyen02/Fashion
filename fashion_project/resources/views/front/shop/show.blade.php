@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-pic-zoom">
-                                <img class="product-big-img" src="front/img/products/{{ $product->productImages[0]->path }}" alt="">
+                                <img class="product-big-img" src="front/img/products/{{ $product->productImages[0]->path ?? ''}}" alt="">
                                 <div class="zoom-icon">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
@@ -106,7 +106,8 @@
                                         <div class="pro-qty">
                                             <input type="text" value="1">
                                         </div>
-                                        <a href="#" class="primary-btn pd-cart">Add To Cart</a>
+                                        <a href="#" class="primary-btn pd-cart" data-product-id="{{ $product->id }}">Add To Cart</a>
+
                                     </div>
                                 </div>
                                 <ul class="pd-tags">

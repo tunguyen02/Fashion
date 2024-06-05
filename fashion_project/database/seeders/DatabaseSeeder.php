@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make('123456'),
                 'avatar' => null,
-                'level' => 0,
+                'level' => 1,
                 'description' => null,
             ],
             [
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'ShaneLynch@gmail.com',
                 'password' => Hash::make('123456'),
                 'avatar' => 'avatar-0.png',
-                'level' => 1,
+                'level' => 2,
                 'description' => 'Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud amodo'
             ],
             [
@@ -61,7 +61,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'BrandonKelley@gmail.com',
                 'password' => Hash::make('123456'),
                 'avatar' => 'avatar-1.png',
-                'level' => 1,
+                'level' => 2,
                 'description' => null,
             ],
             [

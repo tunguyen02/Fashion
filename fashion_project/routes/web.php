@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front;
+use App\Http\Controllers\Admin;
 
 Route::get('/', [Front\HomeController::class, 'index']);
 
@@ -50,6 +51,25 @@ Route::prefix('account')->group(function (){
     Route::get('my-order/{id}', [Front\AccountController::class, 'myOrderShow']);
 });
 
-//Route::prefix('my-order')->group(function(){
-//    Route::get('/', [Front\AccountController::class, 'myOrderIndex']);
-//});
+
+
+//Admin
+Route::prefix('admin')->group(function (){
+    Route::redirect('', 'admin/user');
+
+    Route::resource('user', Admin\UserController::class);
+    Route::resource('category', Admin\ProductCategoryController::class);
+    Route::resource('brand', Admin\BrandController::class);
+    Route::resource('product/{product_id}/image', Admin\ProductImageController::class);
+    Route::resource('product/{product_id}/detail', Admin\ProductDetailController::class);
+    Route::resource('product', Admin\ProductController::class);
+    Route::resource('order', Admin\OrderController::class);
+
+
+    Route::prefix('login')->group(function (){
+        Route::get('',[Admin\HomeController::class, 'getLogin']);
+        Route::post('',[Admin\HomeController::class, 'postLogin']);
+    });
+
+    Route::get('logout',[Admin\HomeController::class, 'logout']);
+});
