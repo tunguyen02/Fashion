@@ -143,31 +143,31 @@
     </div>
     <div class="nav-item">
         <div class="container">
-            <div class="nav-depart">
-                <div class="depart-btn">
-                    <i class="ti-menu"></i>
-                    <span>All departments</span>
-                    <ul class="depart-hover">
-                        <li class="active"><a href="#">Women</a></li>
-                        <li><a href="#">Man</a></li>
-                        <li><a href="#">Underwear</a></li>
-                        <li><a href="#">Kid</a></li>
-                        <li><a href="#">Brand</a></li>
-                        <li><a href="#">Shoes</a></li>
+{{--            <div class="nav-depart">--}}
+{{--                <div class="depart-btn">--}}
+{{--                    <i class="ti-menu"></i>--}}
+{{--                    <span>All departments</span>--}}
+{{--                    <ul class="depart-hover">--}}
+{{--                        <li class="active"><a href="#">Women</a></li>--}}
+{{--                        <li><a href="#">Man</a></li>--}}
+{{--                        <li><a href="#">Underwear</a></li>--}}
+{{--                        <li><a href="#">Kid</a></li>--}}
+{{--                        <li><a href="#">Brand</a></li>--}}
+{{--                        <li><a href="#">Shoes</a></li>--}}
 
 
-                    </ul>
-                </div>
-            </div>
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <nav class="nav-menu mobile-menu">
                 <ul>
                     <li class="{{ (request()->segment(1) == '') ? 'active' : '' }}"><a href="./">Home</a></li>
                     <li class="{{ (request()->segment(1) == 'shop') ? 'active' : '' }}"><a href="./shop">Shop</a></li>
                     <li><a href="">Collection</a>
                         <ul class="dropdown">
-                            <li><a href="">Man</a></li>
-                            <li><a href="">Women</a></li>
-                            <li><a href="">Kid</a></li>
+                            <li><a href="./shop/Men">Man</a></li>
+                            <li><a href="./shop/Women">Women</a></li>
+
                         </ul>
                     </li>
                     <li class="{{ (request()->segment(1) == 'blog') ? 'active' : '' }}"><a href="./blog">Blog</a></li>

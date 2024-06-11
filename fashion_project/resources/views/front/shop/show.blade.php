@@ -54,7 +54,7 @@
                                 <div class="pd-title">
                                     <span>{{ $product->tags }}</span>
                                     <h3>{{ $product->name }}</h3>
-                                    <a href="#" class="heart-icon"><i class="icon_heart_alt"></i></a>
+{{--                                    <a href="#" class="heart-icon"><i class="icon_heart_alt"></i></a>--}}
                                 </div>
                                 <div class="pd-rating">
 
@@ -76,22 +76,21 @@
                                         <h4>{{ $product->price }} </h4>
                                     @endif
                                 </div>
-                                <div class="pd-color">
-                                    <h6>Color</h6>
-                                    <div class="pd-color-choose">
-                                        @foreach(array_unique(array_column($product->productDetails->toArray(), 'color')) as $productColor)
-                                        <div class="cc-item">
+{{--                                <div class="pd-color">--}}
+{{--                                    <h6>Color</h6>--}}
+{{--                                    <div class="pd-color-choose">--}}
+{{--                                        @foreach(array_unique(array_column($product->productDetails->toArray(), 'color')) as $productColor)--}}
+{{--                                        <div class="cc-item">--}}
 
-                                            <input type="radio" id="cc-{{ $productColor }}">
-                                            <label for="cc-{{ $productColor }}" class="cc-{{
-    $productColor
-}}"></label>
+{{--                                            <input type="radio" id="cc-{{ $productColor }}">--}}
+{{--                                            <label for="cc-{{ $productColor }}" class="cc-{{$productColor--}}
+{{--}}"></label>--}}
 
-                                        </div>
-                                        @endforeach
+{{--                                        </div>--}}
+{{--                                        @endforeach--}}
 
-                                    </div>
-                                </div>
+{{--                                    </div>--}}
+{{--                                </div>--}}
                                 <div class="pd-size-choose">
                                     @foreach(array_unique(array_column($product->productDetails->toArray(), 'size')) as $productSize)
                                     <div class="sc-item">
@@ -168,12 +167,12 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td class="p-catagory">Add To Cart</td>
-                                                <td>
-                                                    <div class="cart-add">+ add to cart</div>
-                                                </td>
-                                            </tr>
+{{--                                            <tr>--}}
+{{--                                                <td class="p-catagory">Add To Cart</td>--}}
+{{--                                                <td>--}}
+{{--                                                    <div class="cart-add">+ add to cart</div>--}}
+{{--                                                </td>--}}
+{{--                                            </tr>--}}
                                             <tr>
                                                 <td class="p-catagory">Availability</td>
                                                 <td>

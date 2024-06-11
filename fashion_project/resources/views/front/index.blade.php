@@ -6,35 +6,33 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg" data-setbg="front/img/hero-1.jpg">
+            <div class="single-hero-items set-bg" data-setbg="front/img/hero-01.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
-                            <span>Bag, kids</span>
-                            <h1>Black friday</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci alias corporis sapiente
-                                quibusdam at voluptatum</p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                            <span></span>
+                            <h1>Summer</h1>
+                            <p>Summer sale with many attractive incentives</p>
+                            <a href="./shop" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
                     <div class="off-card">
-                        <h2>Sale <span>50%</span></h2>
+                        <h2>Sale <span>20%</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="single-hero-items set-bg" data-setbg="front/img/hero-2.jpg">
+            <div class="single-hero-items set-bg" data-setbg="front/img/hero-02.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
-                            <span>Bag, kids</span>
-                            <h1>Black friday</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci alias corporis sapiente
-                                quibusdam at voluptatum</p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                            <span></span>
+                            <h1>Summer</h1>
+                            <p>Many items are on sale, hurry and buy now</p>
+                            <a href="./shop" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
                     <div class="off-card">
-                        <h2>Sale <span>50%</span></h2>
+                        <h2>Sale <span>30%</span></h2>
                     </div>
                 </div>
             </div>
@@ -46,30 +44,23 @@
     <div class="banner-section spad">
         <dic class="container-fuild">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="single-banner">
-                        <img src="front/img/banner-1.jpg" alt="">
+                        <img src="front/img/banner-01.jpg" alt="">
                         <div class="inner-text">
                             <h4>Men's</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="single-banner">
-                        <img src="front/img/banner-2.jpg" alt="">
+                        <img src="front/img/banner-02.jpg" alt="">
                         <div class="inner-text">
                             <h4>Women's</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-banner">
-                        <img src="front/img/banner-3.jpg" alt="">
-                        <div class="inner-text">
-                            <h4>Kid's</h4>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </dic>
     </div>
@@ -81,9 +72,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="product-large set-bg" data-setbg="front/img/products/women-large.jpg">
+                    <div class="product-large set-bg" data-setbg="front/img/products/women-large1.jpg">
                         <h2>Women's</h2>
-                        <a href="#">Discover More</a>
+                        <a href="./shop/Women">Discover More</a>
                     </div>
                 </div>
                 <div class="col-lg-8 offset-lg-1">
@@ -114,10 +105,9 @@
             <div class="col-lg-6 text-center">
                 <div class="section-title">
                     <h2>Deal Of The Week</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Officia magnam mollitia, cumque
-                        quisquam maxime laborum expedita possimus </p>
+                    <p>Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination</p>
                     <div class="product-price">
-                        $35.00
+                        $10.00
                         <span>/ HandBag</span>
                     </div>
                 </div>
@@ -139,7 +129,7 @@
                         <p>Secs</p>
                     </div>
                 </div>
-                <a href="" class="primary-btn">Shop Now</a>
+                <a href="./shop/product/56" class="primary-btn">Shop Now</a>
             </div>
         </div>
     </section>
@@ -167,57 +157,15 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1">
-                    <div class="product-large set-bg" data-setbg="front/img/products/man-large.jpg">
+                    <div class="product-large set-bg" data-setbg="front/img/products/man-large1.jpg">
                         <h2>Men's</h2>
-                        <a href="#">Discover More</a>
+                        <a href="./shop/Men">Discover More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Man Banner Section End -->
-
-
-    <!-- Instagram Section Begin -->
-    <div class="instagram-photo">
-        <div class="insta-item set-bg" data-setbg="front/img/insta-1.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">CodeLean_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="front/img/insta-2.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">CodeLean_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="front/img/insta-3.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">CodeLean_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="front/img/insta-4.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">CodeLean_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="front/img/insta-5.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">CodeLean_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="front/img/insta-6.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">CodeLean_Collection</a></h5>
-            </div>
-        </div>
-    </div>
-    <!-- Instagram Section End -->
 
 
     <!-- Latest Blog Section Begin -->

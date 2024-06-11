@@ -44,6 +44,7 @@
                                     <td class="cart-pic first-row"><img style="height: 170px" src="front/img/products/{{ $cart->options->images[0]->path }}" alt=""></td>
                                     <td class="cart-title first-row">
                                         <h5>{{ $cart->name }} </h5>
+
                                     </td>
                                     <td class="p-price first-row">${{ number_format($cart->price, 2) }}</td>
                                     <td class="qua-col first-row">

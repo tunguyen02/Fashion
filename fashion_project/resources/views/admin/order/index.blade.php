@@ -75,14 +75,14 @@
                                                                     <img style="height: 60px;"
                                                                         data-toggle="tooltip" title="Image"
                                                                         data-placement="bottom"
-                                                                        src="front/img/products/{{ $order->orderDetails[0]->products->productImages[0]->path }}" alt="">
+                                                                        src="front/img/products/{{ $order->orderDetails[0]->products->productImages[0]->path ?? 'default.png'}}" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="widget-content-left flex2">
                                                                 <div class="widget-heading">{{ $order->first_name . ' ' . $order->last_name }}</div>
                                                                 <div class="widget-subheading opacity-7">
 
-                                                                    {{ $order->orderDetails[0]->products->name }}
+                                                                    {{ $order->orderDetails[0]->products->name ?? 'No product name' }}
 
                                                                     @if(count($order->orderDetails) > 1)
                                                                         (and {{ count($order->orderDetails) }} other products)

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Front\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front;
 use App\Http\Controllers\Admin;
@@ -36,8 +37,9 @@ Route::prefix('contact')->group(function (){
     Route::get('/', [Front\ContactController::class, 'index']);
 });
 
-Route::prefix('blog')->group(function (){
-    Route::get('/', [Front\BlogController::class, 'index']);
+Route::prefix('blog')->group(function () {
+    Route::get('/', [BlogController::class, 'index'])->name('blog.index');
+    Route::get('/{id}', [BlogController::class, 'show'])->name('blog.show');
 });
 
 Route::prefix('account')->group(function (){

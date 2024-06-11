@@ -49,7 +49,7 @@ class ShopController extends Controller
 
 
         //Get products
-        $perPage = $request->show ?? 3;
+        $perPage = $request->show ?? 9;
         $sortBy = $request->sort_by ?? 'latest';
         $search = $request->search ?? '';
 
@@ -70,7 +70,7 @@ class ShopController extends Controller
         $brands = Brands::all();
 
         //Get Products
-        $perPage = $request->show ?? 3;
+        $perPage = $request->show ?? 9;
         $sortBy = $request->sort_by ?? 'latest';
 
         $products = ProductCategory::where('name', $categoryName)->first()->products->toQuery();
@@ -104,6 +104,7 @@ class ShopController extends Controller
                 break;
             default:
                 $products = $products->orderBy('id');
+
         }
 
         $products = $products->paginate($perPage);

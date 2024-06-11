@@ -45,6 +45,13 @@ class AccountController extends Controller
             return back()->with('notification', 'ERROR: Confirm password does not match');
         }
 
+        // Check if email already exists in the database
+        $existingUser = User::where('email', $request->email)->first();
+
+        if ($existingUser) {
+            return back()->with('notification', 'ERROR: Email already exists. Please use a different email.');
+        }
+
         // Tạo dữ liệu người dùng mới
         $data = [
             'name' => $request->name,
